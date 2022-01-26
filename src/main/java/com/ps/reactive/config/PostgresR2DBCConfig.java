@@ -6,18 +6,10 @@ import io.r2dbc.spi.ConnectionFactoryOptions;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.data.cassandra.repository.config.EnableReactiveCassandraRepositories;
-import org.springframework.data.r2dbc.core.DefaultReactiveDataAccessStrategy;
-import org.springframework.data.r2dbc.core.R2dbcEntityOperations;
-import org.springframework.r2dbc.core.DatabaseClient;
 
 import static io.r2dbc.spi.ConnectionFactoryOptions.*;
 
 @Configuration
-@EnableReactiveCassandraRepositories(
-        basePackages = {
-                "com.ps.db.postgres"
-        })
 public class PostgresR2DBCConfig {
 
     @Bean
