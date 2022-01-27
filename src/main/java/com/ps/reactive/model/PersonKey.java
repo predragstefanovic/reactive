@@ -1,4 +1,4 @@
-package com.ps.reactive.db.cassandra;
+package com.ps.reactive.model;
 
 import lombok.Data;
 import org.springframework.data.cassandra.core.cql.Ordering;

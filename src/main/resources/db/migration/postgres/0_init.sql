@@ -1,8 +1,8 @@
 CREATE TABLE orders
 (
-o_id int,
-c_id character varying(255),
-total numeric,
+o_id SERIAL,
+c_id CHARACTER VARYING(255),
+total BIGINT,
 PRIMARY KEY (o_id)
 );
 

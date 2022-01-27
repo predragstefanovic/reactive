@@ -1,4 +1,4 @@
-package com.ps.reactive.config;
+package com.ps.reactive.model.db.cassandra;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.cassandra.config.AbstractReactiveCassandraConfiguration;

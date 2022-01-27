@@ -1,9 +1,8 @@
-package com.ps.reactive.config;
+package com.ps.reactive.model.db.postgres;
 
 import io.r2dbc.spi.ConnectionFactories;
 import io.r2dbc.spi.ConnectionFactory;
 import io.r2dbc.spi.ConnectionFactoryOptions;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -13,7 +12,6 @@ import static io.r2dbc.spi.ConnectionFactoryOptions.*;
 public class PostgresR2DBCConfig {
 
     @Bean
-    @Qualifier("postgres")
     public ConnectionFactory connectionFactory() {
         return ConnectionFactories.get(
                 ConnectionFactoryOptions.builder()
@@ -25,4 +23,5 @@ public class PostgresR2DBCConfig {
                         .option(DATABASE, "postgres")
                         .build());
     }
+
 }
